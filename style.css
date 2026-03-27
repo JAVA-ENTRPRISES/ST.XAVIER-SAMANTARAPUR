@@ -49,7 +49,7 @@ nav ul li a:hover, nav ul li a.active { color: var(--secondary-gold); }
 footer { background: #222; color: #ccc; padding: 40px 20px; margin-top: 50px; }
 
 .footer-container { 
-    max-width: 500px; 
+    max-width: 1200px; 
     margin: auto; 
     display: grid; 
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
