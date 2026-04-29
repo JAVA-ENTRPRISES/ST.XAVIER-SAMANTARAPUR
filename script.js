@@ -2,7 +2,7 @@
 const headerTemplate = `
     <div class="header-container">
         <div class="logo-section">
-                    <img src="images/logo.png" alt="School Logo" class="logo-img">
+                    <img src="images/LOGO.jpeg" alt="School Logo" class="logo-img">
             <h1 style="margin:0;">St. Xavier High School, Bhubaneswar</h1>
         </div>
         <nav>
@@ -22,13 +22,13 @@ const headerTemplate = `
 const footerTemplate = `
     <div class="footer-container">
         <div class="footer-section">
-            <img src="logo.png" alt="School Logo" width="80" onerror="this.src='https://via.placeholder.com/80?text=LOGO'">
+            <img src="image/LOGO.jpeg" alt="School Logo" width="80" onerror="this.src='https://via.placeholder.com/80?text=LOGO'">
             <p>St. Xavier High School<br>Bhubaneswar, Odisha</p>
         </div>
         <div class="footer-section">
             <h4>Contact Details</h4>
-            <p>📧 info@stxavierbbsr.com</p>
-            <p>📞 +91 674 1234567</p>
+            <p>📧 stxavierbbsr@gmail.com</p>
+            <p>📞 +91 9692973059</p>
         </div>
         <div class="footer-section">
             <h4>Quick Links</h4>
@@ -36,7 +36,9 @@ const footerTemplate = `
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="facility.html">Facility</a></li>
                 <li><a href="disclosure.html">Mandatory Disclosure</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </div>
     </div>
