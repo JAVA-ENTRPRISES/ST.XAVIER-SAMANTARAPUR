@@ -2,7 +2,7 @@
 const headerTemplate = `
     <div class="header-container">
         <div class="logo-section">
-                    <img src="images/LOGO.jpeg" alt="School Logo" class="logo-img">
+                    <img src="image/LOGO.jpeg" alt="School Logo" class="logo-img">
             <h1 style="margin:0;">St. Xavier High School, Bhubaneswar</h1>
         </div>
         <nav>
