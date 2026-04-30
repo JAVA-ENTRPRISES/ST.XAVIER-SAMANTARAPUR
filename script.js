@@ -1,10 +1,11 @@
-// MASTER HEADER CONTENT
+// ===== MASTER HEADER =====
 const headerTemplate = `
     <div class="header-container">
         <div class="logo-section">
-                    <img src="image/LOGO.jpeg" alt="School Logo" class="logo-img">
-            <h1 style="margin:0;">St. Xavier High School, Bhubaneswar</h1>
+            <img src="image/LOGO.jpeg" alt="School Logo" class="logo-img">
+            <div class="logo-text">ST. XAVIER HIGH SCHOOL</div>
         </div>
+
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -12,55 +13,63 @@ const headerTemplate = `
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="facility.html">Facility</a></li>
                 <li><a href="disclosure.html">Mandatory Disclosure</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+
             </ul>
         </nav>
     </div>
 `;
 
-// MASTER FOOTER CONTENT
+
+// ===== MASTER FOOTER =====
 const footerTemplate = `
     <div class="footer-container">
         <div class="footer-section">
-            <img src="image/LOGO.jpeg" alt="School Logo" width="80" onerror="this.src='https://via.placeholder.com/80?text=LOGO'">
+            <img src="image/LOGO.jpeg" class="footer-logo">
             <p>St. Xavier High School<br>Bhubaneswar, Odisha</p>
         </div>
+
         <div class="footer-section">
-            <h4>Contact Details</h4>
-            <p>📧 stxavierbbsr@gmail.com</p>
-            <p>📞 +91 9692973059</p>
-        </div>
-        <div class="footer-section">
-            <h4>Quick Links</h4>
+            <h3>Quick Links</h3>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="facility.html">Facility</a></li>
                 <li><a href="disclosure.html">Mandatory Disclosure</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+
             </ul>
         </div>
+
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <p>📧 stxavierbbsr@gmail.com</p>
+            <p>📞 +91 9692973059</p>
+        </div>
+
+        
     </div>
+
     <div class="footer-bottom">
         &copy; 2026 St. Xavier High School, Bhubaneswar. All Rights Reserved.
     </div>
 `;
 
-// Inject into the page
+
+// ===== LOAD HEADER + FOOTER =====
 document.addEventListener("DOMContentLoaded", () => {
-    const headerElem = document.querySelector("header");
-    const footerElem = document.querySelector("footer");
 
-    if(headerElem) headerElem.innerHTML = headerTemplate;
-    if(footerElem) footerElem.innerHTML = footerTemplate;
+    document.querySelector("header").innerHTML = headerTemplate;
+    document.querySelector("footer").innerHTML = footerTemplate;
 
-    // Highlight the current page link
-    const currentPath = window.location.pathname.split("/").pop();
+    // Active link highlight
+    const currentPage = window.location.pathname.split("/").pop();
+
     document.querySelectorAll("nav a").forEach(link => {
-        if (link.getAttribute("href") === currentPath) {
-            link.style.color = "#ffd700";
-            link.style.borderBottom = "2px solid #ffd700";
+        if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
         }
     });
+
 });
